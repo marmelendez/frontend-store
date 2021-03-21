@@ -19,12 +19,29 @@
     </header>
 
     <nav class="navigation">
-        <a class="navigation__link" ref="#index.html"><i class="fas fa-store margin_bottom"></i>Tienda</a>
-        <a class="navigation__link navigation__link--active" href="nosotros.html"><i class="fas fa-users margin_bottom"></i>Nosotros</a>
+        <a class="navigation__link navigation__link--active" href="index.html"><i class="fas fa-store margin_bottom"></i>Tienda</a>
+        <a class="navigation__link" href="nosotros.html"><i class="fas fa-users margin_bottom"></i>Nosotros</a>
     </nav>
 
     <main>
-        <h1>Nuestros productos</h1>
+        <h1>Malla</h1>
+        <div class="malla">
+            <img class="malla__img" src="img/5.JPG" alt="malla">
+            <div class="malla_content">
+                <p>Maecenas in tortor vestibulum, semper metus eget, congue ipsum. Suspendisse porta eros eleifend, maximus lectus consequat, ullamcorper nisi. </p>
+                <form class="form">
+                    <select>
+                        <option disabled selected>Seleccionar talla</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                        <option>Extra grande</option>
+                    </select>
+                    <input type="number" placeholder="Cantidad" min="1">
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
