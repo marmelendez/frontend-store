@@ -111,7 +111,7 @@ h3 {
     color: var(--orange);
 }
 
-/*----- Navigation ------*/
+/*----- Footer ------*/
 
 .footer {
     background-color: var(--red);
@@ -255,11 +255,60 @@ h3 {
     text-align: center;
 }
 
-.block_img {
-
-}
-
 .block__title {
     margin: 0;
     color: var(--orange);
+}
+
+/*----- Producto page: malla  ------*/
+
+@media(min-width:768px) {
+    .malla {
+        display: grid;
+        padding: 0 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.malla__img {
+    width: 100%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.form__field {
+    width: 100%;
+    border: 1rem solid var(--blue);
+    border-radius: 1rem;
+    background-color: transparent;
+    font-family: var(--mainFont);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.form__submit {
+    background-color: var(--orange);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--mainFont);
+    padding: 1rem;
+    border: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    /*propiedad tiempo de transicion efecto*/
+    transition: background-color 0.3s ease;
+    transition: font-size 0.3s ease;
+    grid-column: 1 / 3;
+    
+}
+
+.form__submit:hover {
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: var(--red);
 }
